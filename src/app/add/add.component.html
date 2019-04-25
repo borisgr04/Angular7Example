@@ -1,0 +1,26 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Add</h1>
+</div>
+<p>Aplicación para realizar sumas en Angular</p>
+
+<div class="form-group">
+  <label>Número 1:
+    <input [(ngModel)]="numero1" placeholder="digite un número" type="number" class="form-control"/>
+  </label>
+</div>
+
+<div>
+  <label>Número 2:
+    <input [(ngModel)]="numero2" placeholder="digite un número " type="number"  class="form-control"/>
+  </label>
+</div>
+
+<div>
+<button (click)="add()" class="btn btn-primary">Add</button>
+</div>
+
+<div>
+  <label>Resultado:
+    {{resultado}}
+  </label>
+</div>
